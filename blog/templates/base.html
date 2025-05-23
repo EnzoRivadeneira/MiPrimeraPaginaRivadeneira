@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Libros</title>
+</head>
+<body>
+    <header>
+        <h1>Blog de Libros</h1>
+        <nav>
+            <a href="{% url 'crear_autor' %}">Crear Autor</a> |
+            <a href="{% url 'crear_genero' %}">Crear Género</a> |
+            <a href="{% url 'crear_libro' %}">Crear Libro</a>
+        </nav>
+    </header>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
+<nav>
+    <a href="{% url 'crear_autor' %}">Crear Autor</a> |
+    <a href="{% url 'crear_genero' %}">Crear Género</a> |
+    <a href="{% url 'crear_libro' %}">Crear Libro</a> |
+    <a href="{% url 'buscar_libro' %}">Buscar Libro</a>
+</nav>
